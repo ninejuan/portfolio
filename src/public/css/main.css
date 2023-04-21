@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@font-face {
+    font-family: 'jamsil';
+    src: url('../fonts/LotteJamsilChe.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'kcc';
+    src: url('../fonts/KCCGanpan.ttf') format('truetype');
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.projectDiv {
+    font-family: 'kcc', 'sans-serif' !important;
+}
+
+h2.subjPj {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+body:not(section, footer) {
+    font-family: 'kcc', 'sans-serif';
+}
+
+section:not(.projectDiv) {
+    font-family: 'jamsil', 'sans-serif';
+}
+
+:global(body),
+main {
+    margin: 0;
+}
+
+:global(body),
+main::-webkit-scrollbar {
+    width: 8px;
+    /* 스크롤바의 너비 */
+    background-color: black;
+}
+
+:global(body),
+main::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #73d887;
+    /* 스크롤바의 색상 */
+
+    border-radius: 10px;
+}
+
+:global(body),
+main,
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    /*스크롤바 뒷 배경 색상*/
+}
+
+img {
+    border-radius: 7px;
+}
+
+.noULine {
+    text-decoration: none;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:global(body),
+main {
+    display: inline-block;
+    margin-top: 100px;
+    left: 50%;
+}
+
+:global(body),
+main {
+    margin: 0;
+}
+
+.divsec {
+    background-color: black;
+    height: 100vh;
+    width: 101vw;
+}
+
+.fullscr {
+    margin-top: -22px;
+    width: 100%;
+    height: 105vh;
+}
+
+.MidText {
+    text-align: center;
+}
+
+li {
+    color: white;
+}
+
+.MPageTxt {
+    margin-left: 5px;
+}
+
+.lang {
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
+}
+
+h1.intro {
+    font-size: 30px;
+}
+
+h2.intro {
+    font-size: 17px;
+}
+
+.copyright {
+    font-size: 24px;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+.pfList {
+    border: #000000 solid 2px;
+}
+
+.underLine {
+    padding-top: 300px;
+}
+
+.projectDiv {
+    display: contents;
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .MPageTxt {
+        margin-left: 7px;
+    }
+
+    h2.intro {
+        font-size: 21px;
+    }
+
+    h1.intro {
+        font-size: 35px
+    }
+
+    .copyright {
+        font-size: 30px;
+    }
+
+}
+
+/* PC */
+@media all and (min-width: 1025px) {
+    .MPageTxt {
+        margin-left: 40px;
+    }
+
+    h1.intro {
+        font-size: 40px;
+    }
+
+    h2.intro {
+        font-size: 20px;
+    }
+
+    .copyright {
+        font-size: 32px;
+    }
+
+    .projectDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+    .profile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+div.pIntroBox {
+    position: relative;
+    /* display: flex; */
+    width: 400px;
+    height: 300px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.89);
+    /* box-shadow: -60px 0px 100px -90px #000000,
+        60px 0px 100px -90px #000000; */
+}
+
+div.pIntroText {
+    width: 400.3px;
+    height: 93px;
+    margin-top: -29.5px;
+    background-color: rgb(247, 247, 247);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.collapsible {
+    background-color: rgb(255, 199, 94);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.CPActive,
+.collapsible:hover {
+    background-color: rgb(254, 166, 2);
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.CPActive:after {
+    content: "\2212";
+}
+
+.CareerContent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.89);
+}
+
+/* Css from AramAPI */
+#typing {
+    font-size: 2.2rem;
+    margin-left: .6rem;
+}
+
+#typing::after {
+    content: '';
+    margin-left: .4rem;
+    border-right: 2px solid #777;
+    animation: cursor .9s infinite steps(2);
+}
+
+@keyframes cursor {
+    from {
+        border-right: 2px solid #222;
+    }
+
+    to {
+        border-right: 2px solid #777;
+    }
+}
+
+#sf li {
+    text-decoration: none;
+}
