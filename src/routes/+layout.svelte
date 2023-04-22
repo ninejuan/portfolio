@@ -1,34 +1,35 @@
 <svelte:head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
     rel="shortcut icon"
-    href="public/assets/favicon.ico"
+    href="assets/favicon.ico"
     type="image/x-icon"
   />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- <link rel="stylesheet" href="css/inital.css"> -->
-  <link rel="stylesheet" href="src/public/css/footer.css" />
-  <link rel="stylesheet" href="src/public/css/main.css" />
-  <link rel="stylesheet" href="src/public/css/specific.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/specific.css" />
 
   <link
-    href="src/public/vendor/bootstrap-icons/bootstrap-icons.css"
+    href="vendor/bootstrap-icons/bootstrap-icons.css"
     rel="stylesheet"
   />
   <link
-    href="src/public/vendor/boxicons/css/boxicons.min.css"
+    href="vendor/boxicons/css/boxicons.min.css"
     rel="stylesheet"
   />
   <link
-    href="src/public/vendor/glightbox/css/glightbox.min.css"
+    href="vendor/glightbox/css/glightbox.min.css"
     rel="stylesheet"
   />
   <link
-    href="src/public/vendor/swiper/swiper-bundle.min.css"
+    href="vendor/swiper/swiper-bundle.min.css"
     rel="stylesheet"
   />
-  <link href="src/public/css/animate.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
   <link
     rel="stylesheet"
     type="text/css"
@@ -52,7 +53,7 @@
   />
   <title>&#xc8fc;&#xc548; | Team Laon</title>
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="src/public/js/navbar.js"></script>
+  <script src="js/navbar.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </svelte:head>
 <slot />

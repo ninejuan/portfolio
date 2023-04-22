@@ -1,3 +1,12 @@
 20230422 0116
 IPhone se2 기준 footer right point에 space 약간 있음.
 - projectDiv를 media 함수로 화면 크기가 너무 작으면 같이 줄여줘야 할 듯
+
+20230422 1154
+default: .minimumCareer {
+    display: none;
+}
+projectDiv 내의 image size를 조절 할 경우 이미지 깨지는 문제로 width > 410px일 경우 
+
+- projectDiv에 {display: none;}
+- minimumCareer에 {display: block;}
