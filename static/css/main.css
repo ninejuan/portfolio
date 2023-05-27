@@ -223,27 +223,15 @@ footer {
 
 /* IPhone SE2 같이 width 길이가 짧은 기종의 경우 projectDiv의 길이로 인해 footer space 발생 문제 있음 */
 @media all and (max-width: 410px) {
-    .projectDiv {
-        display: none;
-    }
-
-    .defaultCareer {
+    .whenPC {
         display:none;
-    }
-
-    .minimumCareer {
-        display:block;
     }
 }
 
 /* 화면의 height 값이 790px 이상일 경우 메인 content 가리는 문제 발생 */
 @media all and (min-width: 411px) {
-    .defaultCareer {
-        display:flex;
-    }
-
-    .minimumCareer {
-       display:none;
+    .whenPC {
+       display:block;
     }
 }
 

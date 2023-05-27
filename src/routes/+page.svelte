@@ -1,10 +1,10 @@
 <script>
-    import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
 	export let data;
 	let s306;
 	onMount(() => {
-		let r = fetch('http://306.juany.kr')
+		let r = fetch("http://306.juany.kr")
 			.then(() => {
 				s306 = true;
 			})
@@ -84,18 +84,6 @@
 				<button class="collapsible tBlue tBold">경력 보기</button>
 				<div class="CareerContent" style="text-align:center;">
 					<div class="defaultCareer">
-						<a
-							>{#each data.career.hacking as cr, index}
-								<span
-									>{index + 1}. {cr}{index ===
-									data.career.length - 1
-										? ""
-										: ""}</span
-								><br />
-							{/each}</a
-						>
-					</div>
-					<div class="minimumCareer">
 						<a class="tLime"> Hacking </a><br />
 						<a
 							>{#each data.career.hacking as cr, index}
@@ -121,17 +109,31 @@
 						>
 					</div>
 				</div>
-				<br /><br /><br />
-				<style>.gist .gist-data { height: 400px; }</style>
+				<br /><br />
 				<div class="projectDiv">
-					<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ninejuan&show_icons=true&locale=en&theme=gotham" alt="ninejuan" /></p>
-					<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ninejuan&show_icons=true&locale=en&theme=gotham" alt="ninejuan" /></p>
+					<div class="whenPC">
+						<p>
+							&nbsp;<img
+								align="center"
+								src="https://github-readme-stats.vercel.app/api?username=ninejuan&show_icons=true&locale=en&theme=gotham"
+								alt="ninejuan"
+							/>
+						</p>
+					</div>
+					<p>
+						&nbsp;<img
+							align="center"
+							src="https://github-readme-stats.vercel.app/api/top-langs/?username=ninejuan&show_icons=true&locale=en&theme=gotham"
+							alt="ninejuan"
+						/>
+					</p>
 				</div>
 			</div>
 			<br />
 		</section>
 		<!-- Channel Plugin Scripts -->
 
+		<!-- Channel Plugin Scripts -->
 		<!-- Channel Plugin Scripts -->
 		<script src="js/index.js"></script>
 		<!-- End Channel Plugin -->
