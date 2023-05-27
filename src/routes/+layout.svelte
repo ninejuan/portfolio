@@ -4,14 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
     rel="shortcut icon"
-    href="assets/favicon.ico"
+    href="/assets/favicon.ico"
     type="image/x-icon"
   />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!-- <link rel="stylesheet" href="css/inital.css"> -->
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/specific.css" />
+  <!-- <link rel="stylesheet" href="/css/inital.css"> -->
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/specific.css" />
 
   <link
     href="vendor/bootstrap-icons/bootstrap-icons.css"
@@ -29,7 +29,7 @@
     href="vendor/swiper/swiper-bundle.min.css"
     rel="stylesheet"
   />
-  <link href="css/animate.css" rel="stylesheet" />
+  <link href="/css/animate.css" rel="stylesheet" />
   <link
     rel="stylesheet"
     type="text/css"
